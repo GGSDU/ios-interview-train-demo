@@ -14,6 +14,13 @@
 		7531C56D260B264600CDBCB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7531C56C260B264600CDBCB9 /* Assets.xcassets */; };
 		7531C570260B264600CDBCB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7531C56E260B264600CDBCB9 /* LaunchScreen.storyboard */; };
 		7531C573260B264600CDBCB9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7531C572260B264600CDBCB9 /* main.m */; };
+		7531C57D260B2A5E00CDBCB9 /* Father.m in Sources */ = {isa = PBXBuildFile; fileRef = 7531C57C260B2A5E00CDBCB9 /* Father.m */; };
+		7531C581260B2A7300CDBCB9 /* Son.m in Sources */ = {isa = PBXBuildFile; fileRef = 7531C580260B2A7300CDBCB9 /* Son.m */; };
+		7531C585260B2B3C00CDBCB9 /* Father+Load.m in Sources */ = {isa = PBXBuildFile; fileRef = 7531C584260B2B3C00CDBCB9 /* Father+Load.m */; };
+		7531C589260B2DFA00CDBCB9 /* Son+Load.m in Sources */ = {isa = PBXBuildFile; fileRef = 7531C588260B2DFA00CDBCB9 /* Son+Load.m */; };
+		7531C58E260B2F0300CDBCB9 /* OtherFather.m in Sources */ = {isa = PBXBuildFile; fileRef = 7531C58D260B2F0300CDBCB9 /* OtherFather.m */; };
+		7531C592260B2F1300CDBCB9 /* OtherSon.m in Sources */ = {isa = PBXBuildFile; fileRef = 7531C591260B2F1300CDBCB9 /* OtherSon.m */; };
+		7531C596260B2F1D00CDBCB9 /* OtherFather+Load.m in Sources */ = {isa = PBXBuildFile; fileRef = 7531C595260B2F1D00CDBCB9 /* OtherFather+Load.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +36,20 @@
 		7531C56F260B264600CDBCB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7531C571260B264600CDBCB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7531C572260B264600CDBCB9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7531C57B260B2A5E00CDBCB9 /* Father.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Father.h; sourceTree = "<group>"; };
+		7531C57C260B2A5E00CDBCB9 /* Father.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Father.m; sourceTree = "<group>"; };
+		7531C57F260B2A7300CDBCB9 /* Son.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Son.h; sourceTree = "<group>"; };
+		7531C580260B2A7300CDBCB9 /* Son.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Son.m; sourceTree = "<group>"; };
+		7531C583260B2B3C00CDBCB9 /* Father+Load.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Father+Load.h"; sourceTree = "<group>"; };
+		7531C584260B2B3C00CDBCB9 /* Father+Load.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Father+Load.m"; sourceTree = "<group>"; };
+		7531C587260B2DFA00CDBCB9 /* Son+Load.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Son+Load.h"; sourceTree = "<group>"; };
+		7531C588260B2DFA00CDBCB9 /* Son+Load.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Son+Load.m"; sourceTree = "<group>"; };
+		7531C58C260B2F0300CDBCB9 /* OtherFather.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OtherFather.h; sourceTree = "<group>"; };
+		7531C58D260B2F0300CDBCB9 /* OtherFather.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OtherFather.m; sourceTree = "<group>"; };
+		7531C590260B2F1300CDBCB9 /* OtherSon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OtherSon.h; sourceTree = "<group>"; };
+		7531C591260B2F1300CDBCB9 /* OtherSon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OtherSon.m; sourceTree = "<group>"; };
+		7531C594260B2F1D00CDBCB9 /* OtherFather+Load.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OtherFather+Load.h"; sourceTree = "<group>"; };
+		7531C595260B2F1D00CDBCB9 /* OtherFather+Load.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "OtherFather+Load.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +88,7 @@
 				7531C564260B264500CDBCB9 /* SceneDelegate.m */,
 				7531C566260B264500CDBCB9 /* ViewController.h */,
 				7531C567260B264500CDBCB9 /* ViewController.m */,
+				7531C57A260B2A4900CDBCB9 /* load */,
 				7531C569260B264500CDBCB9 /* Main.storyboard */,
 				7531C56C260B264600CDBCB9 /* Assets.xcassets */,
 				7531C56E260B264600CDBCB9 /* LaunchScreen.storyboard */,
@@ -74,6 +96,27 @@
 				7531C572260B264600CDBCB9 /* main.m */,
 			);
 			path = "ios-interview-train-demo";
+			sourceTree = "<group>";
+		};
+		7531C57A260B2A4900CDBCB9 /* load */ = {
+			isa = PBXGroup;
+			children = (
+				7531C57B260B2A5E00CDBCB9 /* Father.h */,
+				7531C57C260B2A5E00CDBCB9 /* Father.m */,
+				7531C57F260B2A7300CDBCB9 /* Son.h */,
+				7531C580260B2A7300CDBCB9 /* Son.m */,
+				7531C583260B2B3C00CDBCB9 /* Father+Load.h */,
+				7531C584260B2B3C00CDBCB9 /* Father+Load.m */,
+				7531C587260B2DFA00CDBCB9 /* Son+Load.h */,
+				7531C588260B2DFA00CDBCB9 /* Son+Load.m */,
+				7531C58C260B2F0300CDBCB9 /* OtherFather.h */,
+				7531C58D260B2F0300CDBCB9 /* OtherFather.m */,
+				7531C590260B2F1300CDBCB9 /* OtherSon.h */,
+				7531C591260B2F1300CDBCB9 /* OtherSon.m */,
+				7531C594260B2F1D00CDBCB9 /* OtherFather+Load.h */,
+				7531C595260B2F1D00CDBCB9 /* OtherFather+Load.m */,
+			);
+			path = load;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,10 +188,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7531C592260B2F1300CDBCB9 /* OtherSon.m in Sources */,
+				7531C581260B2A7300CDBCB9 /* Son.m in Sources */,
 				7531C568260B264500CDBCB9 /* ViewController.m in Sources */,
+				7531C589260B2DFA00CDBCB9 /* Son+Load.m in Sources */,
+				7531C596260B2F1D00CDBCB9 /* OtherFather+Load.m in Sources */,
+				7531C585260B2B3C00CDBCB9 /* Father+Load.m in Sources */,
 				7531C562260B264500CDBCB9 /* AppDelegate.m in Sources */,
+				7531C58E260B2F0300CDBCB9 /* OtherFather.m in Sources */,
 				7531C573260B264600CDBCB9 /* main.m in Sources */,
 				7531C565260B264500CDBCB9 /* SceneDelegate.m in Sources */,
+				7531C57D260B2A5E00CDBCB9 /* Father.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
