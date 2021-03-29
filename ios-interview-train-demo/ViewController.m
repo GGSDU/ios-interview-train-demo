@@ -17,7 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self useBlockInterceptLocalVariables];
+//    [self useBlockInterceptLocalVariables];
+    [self nestBlock];
 }
 
 // 使用 Blocks 截获局部变量值
@@ -35,13 +36,30 @@
     myLocalBlock();
 }
 
+
+// 循环引用
 - (void)retainCycleBlock {
     Person *person = [[Person alloc] init];
-    
+        
     __weak typeof(person) weakPerson = person;
     person.blk = ^{
         NSLog(@"%@",weakPerson);
     };
+    person.blk();
+}
+
+// 嵌套block
+-(void)nestBlock {
+    Person *person = [[Person alloc] init];
+    __weak typeof(person) weakPerson = person;
+    person.blk = ^{
+        NSLog(@"%@",weakPerson);
+        __strong typeof(person) strongPerson = weakPerson;
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)2.0 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+            NSLog(@"%@",strongPerson);
+        });
+    };
+    person.blk();
 }
 
 
