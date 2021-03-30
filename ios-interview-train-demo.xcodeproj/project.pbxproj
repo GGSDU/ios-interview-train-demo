@@ -14,6 +14,7 @@
 		7531C56D260B264600CDBCB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7531C56C260B264600CDBCB9 /* Assets.xcassets */; };
 		7531C570260B264600CDBCB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7531C56E260B264600CDBCB9 /* LaunchScreen.storyboard */; };
 		7531C573260B264600CDBCB9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7531C572260B264600CDBCB9 /* main.m */; };
+		7531C5D92613231A00CDBCB9 /* SecurityCodeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7531C5D82613231A00CDBCB9 /* SecurityCodeButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		7531C56F260B264600CDBCB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7531C571260B264600CDBCB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7531C572260B264600CDBCB9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7531C5D72613231A00CDBCB9 /* SecurityCodeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecurityCodeButton.h; sourceTree = "<group>"; };
+		7531C5D82613231A00CDBCB9 /* SecurityCodeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecurityCodeButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				7531C564260B264500CDBCB9 /* SceneDelegate.m */,
 				7531C566260B264500CDBCB9 /* ViewController.h */,
 				7531C567260B264500CDBCB9 /* ViewController.m */,
+				7531C5D72613231A00CDBCB9 /* SecurityCodeButton.h */,
+				7531C5D82613231A00CDBCB9 /* SecurityCodeButton.m */,
 				7531C569260B264500CDBCB9 /* Main.storyboard */,
 				7531C56C260B264600CDBCB9 /* Assets.xcassets */,
 				7531C56E260B264600CDBCB9 /* LaunchScreen.storyboard */,
@@ -147,6 +152,7 @@
 			files = (
 				7531C568260B264500CDBCB9 /* ViewController.m in Sources */,
 				7531C562260B264500CDBCB9 /* AppDelegate.m in Sources */,
+				7531C5D92613231A00CDBCB9 /* SecurityCodeButton.m in Sources */,
 				7531C573260B264600CDBCB9 /* main.m in Sources */,
 				7531C565260B264500CDBCB9 /* SceneDelegate.m in Sources */,
 			);

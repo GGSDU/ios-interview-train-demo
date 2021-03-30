@@ -6,14 +6,30 @@
 //
 
 #import "ViewController.h"
+#import "SecurityCodeButton.h"
 
 @interface ViewController ()
 
 @property (nonatomic,assign) NSInteger ticketSurplusCount;
+@property (nonatomic,strong) SecurityCodeButton *codeBtn;
 
 @end
 
 @implementation ViewController
+
+- (SecurityCodeButton *)codeBtn{
+    if (!_codeBtn) {
+        _codeBtn = [[SecurityCodeButton alloc] init];
+        _codeBtn.frame = CGRectMake(100, 100, 100, 40);
+        [_codeBtn addTarget:self action:@selector(resetPassWordCode:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _codeBtn;
+}
+
+- (void)resetPassWordCode:(UIButton *)aSender
+{
+    NSLog(@"获取验证码");
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -25,7 +41,8 @@
 //    [self apply];
 //    [self semaphoreSync];
 //    [self initTicketStatusNotSave];
-    [self initTicketStatusSave];
+//    [self initTicketStatusSave];
+    [self.view addSubview: self.codeBtn];
 }
 
 // GCD使用步骤只有两步
