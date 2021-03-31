@@ -13,4 +13,10 @@
     NSLog(@"Son Category Load");
 }
 
++ (void)initialize
+{
+    [super initialize];
+    NSLog(@"Son+Load initialize");
+}
+
 @end

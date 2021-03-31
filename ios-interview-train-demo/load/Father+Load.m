@@ -13,4 +13,19 @@
     NSLog(@"Father Category Load");
 }
 
++ (void)initialize
+{
+    [super initialize];
+    NSLog(@"Father+Load initialize");
+}
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        NSLog(@"%s",__func__);
+    }
+    return self;
+}
+
 @end

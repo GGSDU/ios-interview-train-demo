@@ -18,6 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    Father *father1 = [[Father alloc] init];
+    Father *father2 = [[Father alloc] init];
+    Son *son1 = [Son new];
+    Son *son2 = [Son new];
 }
 
 
