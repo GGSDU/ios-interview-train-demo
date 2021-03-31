@@ -17,7 +17,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 //    [self demo1];
-    [self demo2];
+//    [self demo2];
+    [self demo3];
 }
 
 - (void)demo1 {
@@ -32,10 +33,14 @@
     [NSThread detachNewThreadSelector:@selector(run) toTarget:self withObject:nil];
 }
 
+- (void)demo3 {
+    // 1. 隐式创建并启动线程
+    [self performSelectorInBackground:@selector(run) withObject:nil];
+}
+
 // 新线程调用方法，里边为需要执行的任务
 - (void)run {
      NSLog(@"%@", [NSThread currentThread]);
 }
-
 
 @end
