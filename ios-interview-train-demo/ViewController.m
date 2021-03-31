@@ -16,7 +16,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self demo1];
 }
 
+- (void)demo1 {
+    // 1. 创建线程
+    NSThread *thread = [[NSThread alloc] initWithTarget:self selector:@selector(run) object:nil];
+    // 2. 启动线程
+    [thread start];    // 线程一启动，就会在线程thread中执行self的run方法
+}
 
+// 新线程调用方法，里边为需要执行的任务
+- (void)run {
+     NSLog(@"%@", [NSThread currentThread]);
+}
 @end
