@@ -16,7 +16,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self useInvocationOperation];
+//    [self useInvocationOperation];
+    [self useBlockOperation];
 }
 
 /**
@@ -38,5 +39,21 @@
         NSLog(@"NSInvocationOperation---%@", [NSThread currentThread]); // 打印当前线程
     }
 }
+
+/**
+ * 使用子类 NSBlockOperation
+ */
+- (void)useBlockOperation {
+    // 1.创建 NSBlockOperation 对象
+    NSBlockOperation *blockOp = [NSBlockOperation blockOperationWithBlock:^{
+        for (int i = 0; i < 2; i++) {
+            [NSThread sleepForTimeInterval:2]; // 模拟耗时操作
+            NSLog(@"NSBlockOperation---%@", [NSThread currentThread]); // 打印当前线程
+        }
+    }];
+    // 2.调用 start 方法开始执行操作
+    [blockOp start];
+}
+
 
 @end
