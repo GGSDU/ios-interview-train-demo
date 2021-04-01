@@ -6,6 +6,7 @@
 //
 
 #import "ViewController.h"
+#import "SXOperation.h"
 
 @interface ViewController ()
 
@@ -18,7 +19,8 @@
     // Do any additional setup after loading the view.
 //    [self useInvocationOperation];
 //    [self useBlockOperation];
-    [self useBlockOperationAddExecutionBlock];
+//    [self useBlockOperationAddExecutionBlock];
+    [self useCustomOperation];
 }
 
 /**
@@ -115,6 +117,16 @@
     }];
 
     // 3.调用 start 方法开始执行操作
+    [op start];
+}
+
+/**
+ * 使用自定义继承自 NSOperation 的子类
+ */
+- (void)useCustomOperation {
+    // 1.创建 YSCOperation 对象
+    SXOperation *op = [[SXOperation alloc] init];
+    // 2.调用 start 方法开始执行操作
     [op start];
 }
 @end
