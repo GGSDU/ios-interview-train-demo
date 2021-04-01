@@ -23,6 +23,7 @@
     [self useCustomOperation];
 }
 
+#pragma mark - NSOperation
 /**
  * 使用子类 NSInvocationOperation
  */
@@ -129,4 +130,18 @@
     // 2.调用 start 方法开始执行操作
     [op start];
 }
+
+#pragma mark - NSOperationQueue
+/**
+ * 创建队列
+ */
+- (void)createQueue {
+    // 自定义队列创建方法
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+    // 主队列获取方法
+    NSOperationQueue *mainQueue = [NSOperationQueue mainQueue];
+    // 当前队列
+    NSOperationQueue *currentQueue = [NSOperationQueue currentQueue];
+}
+
 @end
