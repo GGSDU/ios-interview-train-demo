@@ -13,6 +13,7 @@
 		7531C6262616E3EA00CDBCB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7531C6242616E3EA00CDBCB9 /* Main.storyboard */; };
 		7531C6282616E3EE00CDBCB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7531C6272616E3EE00CDBCB9 /* Assets.xcassets */; };
 		7531C62B2616E3EE00CDBCB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7531C6292616E3EE00CDBCB9 /* LaunchScreen.storyboard */; };
+		7531C63E2616E7A600CDBCB9 /* LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7531C63D2616E7A600CDBCB9 /* LeetCode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		7531C6272616E3EE00CDBCB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7531C62A2616E3EE00CDBCB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7531C62C2616E3EE00CDBCB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7531C63D2616E7A600CDBCB9 /* LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetCode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				7531C61E2616E3EA00CDBCB9 /* AppDelegate.swift */,
 				7531C6202616E3EA00CDBCB9 /* SceneDelegate.swift */,
 				7531C6222616E3EA00CDBCB9 /* ViewController.swift */,
+				7531C63D2616E7A600CDBCB9 /* LeetCode.swift */,
 				7531C6242616E3EA00CDBCB9 /* Main.storyboard */,
 				7531C6272616E3EE00CDBCB9 /* Assets.xcassets */,
 				7531C6292616E3EE00CDBCB9 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			files = (
 				7531C6232616E3EA00CDBCB9 /* ViewController.swift in Sources */,
 				7531C61F2616E3EA00CDBCB9 /* AppDelegate.swift in Sources */,
+				7531C63E2616E7A600CDBCB9 /* LeetCode.swift in Sources */,
 				7531C6212616E3EA00CDBCB9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
